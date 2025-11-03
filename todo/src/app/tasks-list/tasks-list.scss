@@ -1,0 +1,15 @@
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tasks {
+    align-items: center;
+}

@@ -1,0 +1,11 @@
+<div class="list-container">
+    <p class="title">Ma To Do List</p>
+
+    <div class="tasks">
+        @for (task of tasks; track $index) { 
+        <app-task [task]="task" (updatedTask)="updateTask($event)" (deleteTask)="deleteTask($event)"></app-task>
+        }
+    </div>
+
+    <app-add-task (addedTask)="addTask($event)"></app-add-task>
+</div>

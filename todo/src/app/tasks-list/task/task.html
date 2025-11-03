@@ -1,0 +1,7 @@
+<div class="task-container">
+    <input type="checkbox" [(ngModel)]="task.done" (ngModelChange)="updateTask()"/>
+    <input type="text" class="task" [class.done]="task.done" [value]="task.description" (keyup.enter)="updateDescription($event)">
+    <button mat-icon-button (click)="onDelete()">
+        <mat-icon>delete</mat-icon>
+    </button>      
+</div>
